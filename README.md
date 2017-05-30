@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/badge/version-0.1.0--dev-brightgreen.svg?style=flat-square)]()
 [![License](https://img.shields.io/badge/license-BSD-lightgrey.svg?style=flat-square "License")](./LICENSE.md)
 [![Gratipay](https://img.shields.io/gratipay/cedwardsmedia.svg?style=flat-square "License")](https://gratipay.com/~cedwardsmedia/)
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/cedwardsmedia)
 
 _EveryoneAPI.py_ is a Python 3 module for querying EveryoneAPI. It is based on [EveryonePHP](https://github.com/cedwardsmedia/everyonephp) and was written to provide a Python class for EveryoneAPI as well as a Python learning project for myself.
 
