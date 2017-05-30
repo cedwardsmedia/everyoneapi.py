@@ -15,17 +15,24 @@ In order to use _EveryoneAPI.py_, you must have an [EveryoneAPI account](https:/
 
 I have never been a great programmer. As such, I strived to make EveryoneAPI.py as simple to use as possible and I'm always looking to simplify it even more. Let's build a basic EveryoneAPI client using EveryoneAPI.py:
 
-### Step 1: Import the EveryoneAPI module and instantiate the object
+### Step 1: Install ]Python Requests](http://docs.python-requests.org)
+```bash
+$ pip install requests
+```
+Install Python Requests using [pip](http://docs.python-guide.org/en/latest/starting/installation/)
+
+### Step 2: Import the EveryoneAPI module and instantiate the object
 ```python3
 # Import EveryoneAPI
 import everyoneapi
+```
 
 # Instantiate EveryoneAPI
 api = everyoneapi.EveryoneAPI()
 ```
 Creating a new EveryoneAPI.py object allows us to interact with the class.
 
-### Step 2: Set EveryoneAPI Credentials
+### Step 3: Set EveryoneAPI Credentials
 ```python3
 # Set EveryoneAPI Credentials
 api.sid = "9e3cef42da225d42bd86feaa80ff47";
@@ -33,7 +40,7 @@ api.token = "65f3ef01462c62f7f4ce7d2156ceee";
 ```
 EveryoneAPI.py needs these credentials in order to query EveryoneAPI. Otherwise, the query will fail. How you obtain and store these credentials is completely up to you, just be sure to set them for each instance of EveryoneAPI.py before calling `query()`.
 
-### Step 3: Set EveryoneAPI Data Points
+### Step 4: Set EveryoneAPI Data Points
 ```python3
 // Set EveryoneAPI Data Points
 data = array("name", "profile", "cnam", "gender", "image", "address", "location", "line_provider", "carrier", "carrier_o", "linetype");
@@ -42,14 +49,14 @@ Each data point is optional and all data points are returned by default, unless 
 
 For a full list of available Data Points, check the [EveryoneAPI Docs](https://www.everyoneapi.com/docs#data-points).
 
-### Step 4: Perform EveryoneAPI Query
+### Step 5: Perform EveryoneAPI Query
 ```python3
 // Perform EveryoneAPI query
 api.query(phone, data);
 ```
 Only `$phone` is required for this function. The function performs the query against EveryoneAPI and stores the results in a dict, in this example, `api.data`.
 
-### Step 5: Print the Results
+### Step 6: Print the Results
 ```python3
 // Print results
 
