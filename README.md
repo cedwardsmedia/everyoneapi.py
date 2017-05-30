@@ -54,7 +54,7 @@ For a full list of available Data Points, check the [EveryoneAPI Docs](https://w
 // Perform EveryoneAPI query
 api.query(phone, data);
 ```
-Only `$phone` is required for this function. The function performs the query against EveryoneAPI and stores the results in a dict, in this example, `api.data`.
+Only `phone` is required for this function. The function performs the query against EveryoneAPI and stores the results in a dict, in this example, `api.data`.
 
 ### Step 6: Print the Results
 ```python3
