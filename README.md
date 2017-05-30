@@ -15,7 +15,7 @@ In order to use _EveryoneAPI.py_, you must have an [EveryoneAPI account](https:/
 
 I have never been a great programmer. As such, I strived to make EveryoneAPI.py as simple to use as possible and I'm always looking to simplify it even more. Let's build a basic EveryoneAPI client using EveryoneAPI.py:
 
-### Step 1: Install ]Python Requests](http://docs.python-requests.org)
+### Step 1: Install [Python Requests](http://docs.python-requests.org)
 ```bash
 $ pip install requests
 ```
