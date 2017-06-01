@@ -1,7 +1,7 @@
-# EveryoneAPI.py v0.1.0-dev
+# EveryoneAPI.py v0.1.2
 
 [![Source](https://img.shields.io/badge/source-cedwardsmedia/everyoneapi.py-blue.svg?style=flat-square "Source")](https://www.github.com/cedwardsmedia/everyoneapi.py)
-[![Version](https://img.shields.io/badge/version-0.1.0--dev-brightgreen.svg?style=flat-square)]()
+[![Version](https://img.shields.io/badge/version-0.1.2s-brightgreen.svg?style=flat-square)]()
 [![License](https://img.shields.io/badge/license-BSD-lightgrey.svg?style=flat-square "License")](./LICENSE.md)
 [![Gratipay](https://img.shields.io/gratipay/cedwardsmedia.svg?style=flat-square "License")](https://gratipay.com/~cedwardsmedia/)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/cedwardsmedia)
@@ -43,18 +43,18 @@ EveryoneAPI.py needs these credentials in order to query EveryoneAPI. Otherwise,
 ### Step 4: Set EveryoneAPI Data Points
 ```python3
 // Set EveryoneAPI Data Points
-data = array("name", "profile", "cnam", "gender", "image", "address", "location", "line_provider", "carrier", "carrier_o", "linetype");
+api.datapoints = ["name", "profile", "cnam", "gender", "image", "address", "location", "line_provider", "carrier", "carrier_o", "linetype"]
 ```
-Each data point is optional and all data points are returned by default, unless otherwise specified. In the same way EveryoneAPI uses a comma separated list of identifiers, EveryoneAPI.py uses a simple array to specify the data points you wish to retrieve. EveryoneAPI.py passes these identifiers directly to EveryoneAPI so you will use the same identifiers here as you would in a cURL request.
+Each data point is optional and all data points are returned by default, unless otherwise specified. In the same way EveryoneAPI uses a comma separated list of identifiers, EveryoneAPI.py uses a simple list to specify the data points you wish to retrieve. EveryoneAPI.py passes these identifiers directly to EveryoneAPI so you will use the same identifiers here as you would in a cURL request.
 
 For a full list of available Data Points, check the [EveryoneAPI Docs](https://www.everyoneapi.com/docs#data-points).
 
 ### Step 5: Perform EveryoneAPI Query
 ```python3
 // Perform EveryoneAPI query
-api.query(phone, data);
+api.query(phone);
 ```
-Only `phone` is required for this function. The function performs the query against EveryoneAPI and stores the results in a dict, in this example, `api.data`.
+Only `phone` is required for this function. The function performs the query against EveryoneAPI and stores the results in a dict, in this example, `api.results`.
 
 ### Step 6: Print the Results
 ```python3
