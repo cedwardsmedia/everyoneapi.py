@@ -17,7 +17,7 @@ I have never been a great programmer. As such, I strived to make EveryoneAPI.py 
 
 ### Step 1: Install [Python Requests](http://docs.python-requests.org)
 ```bash
-$ pip install requests
+$ pip3 install requests
 ```
 Install Python Requests using [pip](http://docs.python-guide.org/en/latest/starting/installation/)
 
